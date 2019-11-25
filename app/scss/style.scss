@@ -1,0 +1,14 @@
+@import 'vars';
+@import 'global';
+@import 'fonts';
+.header__top-inner {
+    display: flex;
+    justify-content: space-between;
+    height: 91px;
+    align-items: center;
+}
+
+.header__text {
+    margin-left: auto;
+    margin-right: 25px;
+}
