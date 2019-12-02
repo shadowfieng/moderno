@@ -1,5 +1,5 @@
 $(function() {
-    var mixer = mixitup('.products__inner-box');
+    
    
     $(".rate-star").rateYo({
         rating: 5,
@@ -12,6 +12,16 @@ $(function() {
           arrows: false,
           slidesToShow: 4,
           slidesToScroll: 4
-          
       });
+
+    //   var mixer = mixitup('.products__inner-box');
+
+      $(".js-range-slider").ionRangeSlider({
+        type: "double",
+        min: 0,
+        max: 1000,
+        from: 0,
+        to: 600,
+        prefix: "$"
+    });
 });
