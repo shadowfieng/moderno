@@ -13,9 +13,7 @@ $(function() {
           slidesToShow: 4,
           slidesToScroll: 4
       });
-
     //   var mixer = mixitup('.products__inner-box');
-
       $(".js-range-slider").ionRangeSlider({
         type: "double",
         min: 0,
@@ -23,5 +21,15 @@ $(function() {
         from: 0,
         to: 600,
         prefix: "$"
+    });
+    $('.icon-th-list').on('click', function(){
+      $('.product__item').addClass('list');
+      $(this).addClass('active');
+      $('.icon-th-large').removeClass('active');
+    });
+    $('.icon-th-large').on('click', function(){
+      $('.product__item').removeClass('list');
+      $(this).addClass('active');
+      $('.icon-th-list').removeClass('active');
     });
 });
